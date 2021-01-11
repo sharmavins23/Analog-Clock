@@ -1,0 +1,31 @@
+# CMOS Clock
+set_property PACKAGE_PIN H4 [get_ports {cmosClock}]
+set_property IOSTANDARD LVCMOS18 [get_ports {cmosClock}]
+
+# 7Seg DATA lines
+set_property PACKAGE_PIN P4 [get_ports {sevenSegmentData[0]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sevenSegmentData[0]}]
+set_property PACKAGE_PIN N4 [get_ports {sevenSegmentData[1]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sevenSegmentData[1]}]
+set_property PACKAGE_PIN M3 [get_ports {sevenSegmentData[2]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sevenSegmentData[2]}]
+set_property PACKAGE_PIN M5 [get_ports {sevenSegmentData[3]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sevenSegmentData[3]}]
+set_property PACKAGE_PIN L5 [get_ports {sevenSegmentData[4]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sevenSegmentData[4]}]
+set_property PACKAGE_PIN L6 [get_ports {sevenSegmentData[5]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sevenSegmentData[5]}]
+set_property PACKAGE_PIN M6 [get_ports {sevenSegmentData[6]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sevenSegmentData[6]}]
+set_property PACKAGE_PIN P5 [get_ports {sevenSegmentData[7]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sevenSegmentData[7]}]
+
+# 7Seg CTRL lines
+set_property PACKAGE_PIN L4 [get_ports {sevenSegmentEnable[0]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sevenSegmentEnable[0]}]
+set_property PACKAGE_PIN P1 [get_ports {sevenSegmentEnable[1]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sevenSegmentEnable[1]}]
+set_property PACKAGE_PIN R1 [get_ports {sevenSegmentEnable[2]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sevenSegmentEnable[2]}]
+set_property PACKAGE_PIN N3 [get_ports {sevenSegmentEnable[3]}]
+set_property IOSTANDARD LVCMOS18 [get_ports {sevenSegmentEnable[3]}]
