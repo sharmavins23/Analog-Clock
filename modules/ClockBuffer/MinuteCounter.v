@@ -5,6 +5,7 @@
 // Description: Acts as a counter, inverting the output signal every 30 s.
 ////////////////////////////////////////////////////////////////////////////////
 
+
 module MinuteCounter (
     // Inputs
     input secondClock,

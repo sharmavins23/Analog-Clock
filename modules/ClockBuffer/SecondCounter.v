@@ -5,6 +5,7 @@
 // Description: Acts as a counter, inverting the output signal every 500 ms.
 ////////////////////////////////////////////////////////////////////////////////
 
+
 module SecondCounter (
     // Inputs
     input cmosClock,

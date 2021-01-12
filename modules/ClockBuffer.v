@@ -6,6 +6,7 @@
 //              acceptable values. Uses three clock buffer counters to divide.
 ////////////////////////////////////////////////////////////////////////////////
 
+
 module ClockBuffer (
     // Inputs
     input cmosClock,        // Input 100MHz clock

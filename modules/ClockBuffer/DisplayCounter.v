@@ -6,6 +6,7 @@
 //              output frequency is 200 Hz, suitable for driving a display.
 ////////////////////////////////////////////////////////////////////////////////
 
+
 module DisplayCounter (
     // Inputs
     input cmosClock,

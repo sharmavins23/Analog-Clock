@@ -5,6 +5,7 @@
 // Description: Top level module for analog clock functionality.
 ////////////////////////////////////////////////////////////////////////////////
 
+
 module AnalogClock (
     // Inputs
     input cmosClock,
