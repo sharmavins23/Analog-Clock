@@ -24,7 +24,7 @@ module SecondCounter (
     // Count up clock and feedback values
     always @(posedge cmosClock) begin
         if (counterFeedback == 50000000) begin // Stop at 500ms
-            clockOut = ~clockFeedback;
+            clockOut <= ~clockFeedback;
             counterOut <= 0;
         end else begin
             counterOut <= counterFeedback + 1;

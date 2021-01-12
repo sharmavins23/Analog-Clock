@@ -24,7 +24,7 @@ module HourCounter (
     // Count up clock and feedback values
     always @(posedge minuteClock) begin
         if (counterFeedback == 30) begin // Stop at 30m
-            clockOut = ~clockFeedback;
+            clockOut <= ~clockFeedback;
             counterOut <= 0;
         end else begin
             counterOut <= counterFeedback + 1;
