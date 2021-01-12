@@ -13,12 +13,13 @@ module AnalogClock (
     output reg [7:0] sevenSegmentData
     );
 
-    wire secondClock, minuteClock, hourClock;
+    wire secondClock, minuteClock, hourClock, displayClock;
     ClockBuffer ClockBuffer(
         cmosClock,
         secondClock,
         minuteClock,
-        hourClock
+        hourClock,
+        displayClock
     );
 
 endmodule

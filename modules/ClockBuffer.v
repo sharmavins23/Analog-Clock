@@ -12,7 +12,8 @@ module ClockBuffer (
     // Outputs
     output reg secondClock  // Inverts every half second
     output reg minuteClock, // Inverts every half minute
-    output reg hourClock    // Inverts every half hour
+    output reg hourClock,   // Inverts every half hour
+    output reg displayClock // 200Hz signal for display switching
     );
 
     wire [25:0] secondCounterFeedback;
@@ -45,11 +46,24 @@ module ClockBuffer (
         hourClockFeedback
     );
 
+    wire [17:0] displayCounterFeedback;
+    wire displayClockFeedback;
+    DisplayCounter DisplayCounter(
+        cmosClock,
+        displayCounterFeedback,
+        displayClockFeedback,
+        displayCounterFeedback,
+        displayClockFeedback
+    );
+
     always @(*) begin
         // Driving clock outputs
         secondClock <= secondClockFeedback;
         minuteClock <= minuteClockFeedback;
         hourClock   <= hourClockFeedback;
+
+        // Driving display signal
+        displayClock <= displayClockFeedback;
     end
 
 endmodule
