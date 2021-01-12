@@ -10,7 +10,7 @@ module ClockBuffer (
     // Inputs
     input cmosClock,        // Input 100MHz clock
     // Outputs
-    output reg secondClock  // Inverts every half second
+    output reg secondClock, // Inverts every half second
     output reg minuteClock, // Inverts every half minute
     output reg hourClock,   // Inverts every half hour
     output reg displayClock // 200Hz signal for display switching
